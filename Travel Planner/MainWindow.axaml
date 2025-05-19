@@ -12,70 +12,55 @@
         TransparencyLevelHint="AcrylicBlur"
         ExtendClientAreaToDecorationsHint="False"
         SystemDecorations="Full">
-    
+
     <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled">
-        
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
             
-            <TextBlock 
-                Text="Travel Planner"
-                FontSize="50"
-                TextAlignment="Center"
-                Margin="0,0,0,20"
-                />
-            
-            <TextBox 
-                    Width="200" 
-                    Height="30" 
-                    Watermark="Imię..."
-                />
-                
-                <TextBox 
-                    Width="200" 
-                    Height="30" 
-                    Watermark="Nazwisko..."
-                />
-            
-            <ComboBox x:Name="ComboBox" Width="200" PlaceholderText="Podróż do..." HorizontalAlignment="Center">
-                <ComboBoxItem x:Name="niem" Content="Niemcy" />
-                <ComboBoxItem x:Name="chin" Content="Chiny" />
-                <ComboBoxItem x:Name="japo" Content="Japonia" />
-                <ComboBoxItem x:Name="usa" Content="USA" />
-                <ComboBoxItem x:Name="hisz" Content="Hiszpania" />
+            <TextBlock Text="Travel Planner" FontSize="50" TextAlignment="Center" Margin="0,0,0,20" />
+
+            <TextBox Width="200" Height="30" x:Name="Imie" Watermark="Imię..." />
+            <TextBox Width="200" Height="30" x:Name="Nazwisko" Watermark="Nazwisko..." />
+
+            <ComboBox x:Name="ComboBox" Width="200" PlaceholderText="Podróż do..." Margin="68,0,0,0" >
+                <ComboBoxItem x:Name="niem" Content="Niemcy" Tag="niemcy.png" />
+                <ComboBoxItem x:Name="chin" Content="Chiny" Tag="chiny.png" />
+                <ComboBoxItem x:Name="japo" Content="Japonia" Tag="japonia.png" />
+                <ComboBoxItem x:Name="usa" Content="USA" Tag="usa.png" />
+                <ComboBoxItem x:Name="hisz" Content="Hiszpania" Tag="hiszpania.png" />
             </ComboBox>
             
-            <TextBlock Text="Atrakcje turystyczne, które chcesz odzwiedzić:" TextAlignment="Center" Margin="0, 50,0,0"/>
-            
-            <CheckBox Content="Muzea" HorizontalAlignment="Left" Margin="50,0,0,0"/>
-            <CheckBox Content="Parki Narodowe" HorizontalAlignment="Left" Margin="50,0,0,0"/>
-            <CheckBox Content="Zabytki" HorizontalAlignment="Left" Margin="50,0,0,0"/>
-            <CheckBox Content="Restauracje" HorizontalAlignment="Left" Margin="50,0,0,0"/>
-            <CheckBox Content="Burdele" HorizontalAlignment="Left" Margin="50,0,0,0"/>
-            <CheckBox Content="Galerie sztuki" HorizontalAlignment="Left" Margin="50,0,0,0"/>
-            <CheckBox Content="Festiwale i koncerty" HorizontalAlignment="Left" Margin="50,0,0,0"/>
-                
-            <TextBlock Text="Środek transportu, którym chcesz podróżować:" TextAlignment="Center" Margin="0, 50,0,0"/>
-            
-            <RadioButton Content="Samolot" GroupName="srodekTransportu" HorizontalAlignment="Left" Margin="50,0,0,0"/>
-            <RadioButton Content="Pociąg" GroupName="srodekTransportu" HorizontalAlignment="Left" Margin="50,0,0,0"/>
-            <RadioButton Content="Statek" GroupName="srodekTransportu" HorizontalAlignment="Left" Margin="50,0,0,0"/>
-            <RadioButton Content="Helikopter" GroupName="srodekTransportu" HorizontalAlignment="Left" Margin="50,0,0,0"/>
-            <RadioButton Content="UFO" GroupName="srodekTransportu" HorizontalAlignment="Left" Margin="50,0,0,0"/>
-            
-            <TextBlock Text="Lista miast do odwiedzenia:" TextAlignment="Center" Margin="0, 50,0,0"/>
-            
-            <ListBox x:Name="listaMiast" HorizontalAlignment="Center">
-                <ListBoxItem Content="miasto1"/>
-                <ListBoxItem Content="miasto2"/>
-                <ListBoxItem Content="miasto3"/>
-                <ListBoxItem Content="miasto4"/>
-            </ListBox>
-            
-            <TextBox x:Name="NoweMiastoTextBox" Width="200" Watermark="Wpisz nazwę miasta..."/>
-            <Button Content="Dodaj miasto" Click="Button_OnClickMiastoAdder"/>
+            <Image x:Name="CountryImage" Width="300" Height="200" Margin="0,0,0,0" />
+
+            <TextBlock Text="Atrakcje turystyczne, które chcesz odzwiedzić:" Margin="0, 50,0,0"/>
+            <StackPanel>
+                <CheckBox x:Name="CheckBox1" Content="Muzea" Margin="50,0,0,0"/>
+                <CheckBox x:Name="CheckBox2" Content="Parki Narodowe" Margin="50,0,0,0"/>
+                <CheckBox x:Name="CheckBox3" Content="Zabytki" Margin="50,0,0,0"/>
+                <CheckBox x:Name="CheckBox4" Content="Restauracje" Margin="50,0,0,0"/>
+                <CheckBox x:Name="CheckBox5" Content="Burdele" Margin="50,0,0,0"/>
+                <CheckBox x:Name="CheckBox6" Content="Galerie Sztuki" Margin="50,0,0,0"/>
+                <CheckBox x:Name="CheckBox7" Content="Festiwale i Koncerty" Margin="50,0,0,0"/>
+            </StackPanel>
+
+            <TextBlock Text="Środek transportu, którym chcesz podróżować:" Margin="0, 50,0,0"/>
+            <StackPanel>
+                <RadioButton Content="Samolot" GroupName="srodekTransportu" Margin="50,0,0,0"/>
+                <RadioButton Content="Pociąg" GroupName="srodekTransportu" Margin="50,0,0,0"/>
+                <RadioButton Content="Statek" GroupName="srodekTransportu" Margin="50,0,0,0"/>
+                <RadioButton Content="Helikopter" GroupName="srodekTransportu" Margin="50,0,0,0"/>
+                <RadioButton Content="UFO" GroupName="srodekTransportu" Margin="50,0,0,0"/>
+            </StackPanel>
+
+            <TextBlock Text="Miasta, które chcesz odwiedzić:" Margin="0, 50,0,0"/>
+            <StackPanel x:Name="ListaMiastPanel">
+                <ListBox x:Name="MiastoListBox" Width="150" Margin="0,0,90,0"/>
+
+                <TextBox x:Name="NoweMiastoTextBox" Width="200" Watermark="Wpisz nazwę miasta..." Margin="0, 20,0,10"/>
+                <Button Content="Dodaj miasto" Click="Button_OnClickMiastoAdder" HorizontalAlignment="Center"/>
+            </StackPanel>
+
+            <Button Content="Zapisz" Click="OpenNewWindow_Click" HorizontalAlignment="Center"/>
             
         </StackPanel>
-        
     </ScrollViewer>
-    
 </Window>

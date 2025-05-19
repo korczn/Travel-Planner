@@ -64,3 +64,4 @@ C:\Users\user\RiderProjects\Travel Planner\Travel Planner\obj\Debug\net9.0\refin
 C:\Users\user\RiderProjects\Travel Planner\Travel Planner\obj\Debug\net9.0\Travel Planner.pdb
 C:\Users\user\RiderProjects\Travel Planner\Travel Planner\obj\Debug\net9.0\Travel Planner.genruntimeconfig.cache
 C:\Users\user\RiderProjects\Travel Planner\Travel Planner\obj\Debug\net9.0\ref\Travel Planner.dll
+C:\Users\user\RiderProjects\Travel Planner\Travel Planner\obj\Debug\net9.0\Travel Planner.sourcelink.json
