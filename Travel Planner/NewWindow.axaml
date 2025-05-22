@@ -2,16 +2,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="Travel_Planner.NewWindow"
         Title="Nowe Okno"
-        Width="400" Height="300">
+        Width="960" Height="450">
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
         
-        <TextBlock x:Name="statsImie" Text="statystkiImie" TextAlignment="Left"/>
+        <TextBlock x:Name="statsImie" Text="statystkiImie" TextAlignment="Left" FontSize="20" FontWeight="Bold"/>
         
-        <TextBlock x:Name="statsNazwisko" Text="statystkiNazwisko" TextAlignment="Left" Margin="0,0,0,20"/>
+        <TextBlock x:Name="statsNazwisko" Text="statystkiNazwisko" TextAlignment="Left" Margin="0,0,0,20" FontSize="20" FontWeight="Bold"/>
         
-        <TextBlock x:Name="statsCountryPicked" Text="statystkiKraj" TextAlignment="Left" Margin="0,0,0,20"/>
+        <TextBlock x:Name="statsWybranyKraj" Text="statystkiKraj" TextAlignment="Left" Margin="0,0,0,20" FontSize="15"/>
         
-        <TextBlock x:Name="statsWybraneMiejsca" Text="statystykiWybraneMiejsce" TextAlignment="Left"/>
+        <TextBlock x:Name="statsWybraneMiejsca" Text="statystykiWybraneMiejsce" TextAlignment="Left" FontSize="15"/>
+        
+        <TextBlock x:Name="statsWybranyTransport" Text="statystykiWybranyTransport" TextAlignment="Left" Margin="0,0,0,20" FontSize="15"/>
+        
+        <TextBlock x:Name="statsWybraneMiasta" Text="statystykiWybraneMiasta" TextAlignment="Left" FontSize="15"/>
         
         <Button Content="Zamknij" Click="CloseButton_Click" HorizontalAlignment="Center" />
         
