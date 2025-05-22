@@ -70,7 +70,7 @@ namespace Travel_Planner
             if (CheckBox7.IsChecked == true)
                 wybraneMiejsca.Add("Festiwale i Koncerty");
             
-            var noweOkno = new NewWindow(firstName, lastName, countryPicked, wybraneMiejsca);
+            var noweOkno = new NewWindow(firstName, lastName, countryPicked, string.Join(", ", wybraneMiejsca));
             noweOkno.Show();
         }
         
