@@ -44,7 +44,7 @@ namespace Travel_Planner
             if (CheckBox2.IsChecked == true) wybraneMiejsca.Add("Parki Narodowe");
             if (CheckBox3.IsChecked == true) wybraneMiejsca.Add("Zabytki");
             if (CheckBox4.IsChecked == true) wybraneMiejsca.Add("Restauracje");
-            if (CheckBox5.IsChecked == true) wybraneMiejsca.Add("Burdele");
+            if (CheckBox5.IsChecked == true) wybraneMiejsca.Add("Dom Publiczny");
             if (CheckBox6.IsChecked == true) wybraneMiejsca.Add("Galerie Sztuki");
             if (CheckBox7.IsChecked == true) wybraneMiejsca.Add("Festiwale i Koncerty");
 

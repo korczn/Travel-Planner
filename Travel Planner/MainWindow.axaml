@@ -22,11 +22,15 @@
             <TextBox Width="200" Height="30" x:Name="Nazwisko" Watermark="Nazwisko..." />
 
             <ComboBox x:Name="ComboBox" Width="200" PlaceholderText="Podróż do..." Margin="68,0,0,0">
+                <ComboBoxItem x:Name="pol" Content="Polska" Tag="" />
                 <ComboBoxItem x:Name="niem" Content="Niemcy" Tag="niemcy.png" />
-                <ComboBoxItem x:Name="chin" Content="Chiny" Tag="chiny.png" />
-                <ComboBoxItem x:Name="japo" Content="Japonia" Tag="japonia.png" />
+                <ComboBoxItem x:Name="ros" Content="Rosja" Tag="" />
                 <ComboBoxItem x:Name="usa" Content="USA" Tag="usa.png" />
-                <ComboBoxItem x:Name="hisz" Content="Hiszpania" Tag="hiszpania.png" />
+                <ComboBoxItem x:Name="franc" Content="Francja" Tag="usa.png" />
+                <ComboBoxItem x:Name="hiszp" Content="Hiszpania" Tag="hiszpania.png" />
+                <ComboBoxItem x:Name="ital" Content="Włochy" Tag="" />
+                <ComboBoxItem x:Name="chin" Content="Chiny" Tag="chiny.png" />
+                <ComboBoxItem x:Name="japon" Content="Japonia" Tag="japonia.png" />
             </ComboBox>
             
             <Image x:Name="CountryImage" Width="300" Height="200" Margin="0,0,0,0" />
@@ -37,7 +41,7 @@
                 <CheckBox x:Name="CheckBox2" Content="Parki Narodowe" Margin="50,0,0,0"/>
                 <CheckBox x:Name="CheckBox3" Content="Zabytki" Margin="50,0,0,0"/>
                 <CheckBox x:Name="CheckBox4" Content="Restauracje" Margin="50,0,0,0"/>
-                <CheckBox x:Name="CheckBox5" Content="Burdele" Margin="50,0,0,0"/>
+                <CheckBox x:Name="CheckBox5" Content="Dom Publiczny" Margin="50,0,0,0"/>
                 <CheckBox x:Name="CheckBox6" Content="Galerie Sztuki" Margin="50,0,0,0"/>
                 <CheckBox x:Name="CheckBox7" Content="Festiwale i Koncerty" Margin="50,0,0,0"/>
             </StackPanel>
